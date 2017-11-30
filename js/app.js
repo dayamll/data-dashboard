@@ -42,12 +42,27 @@ los sprints cursados. La meta de puntos es 70% del total de puntos en HSE y en t
 
 // data.AQP['2016-2']['students'][0]['sprints']
 function studentsExceedGoal (){
-    var arrayStudents = data[sede][generation]['students'];
-    for(i = 0; arrayStudents.length; i++){
-      if(arrayStudents[i]['sprints'])
+  var arrayStudents = data[sede][generation]['students'];
+  for(i = 0; arrayStudents.length; i++){
+    if(arrayStudents[i]['sprints'] == )
+
     }
- 
 }
+
+/*--Pregunta 9:La puntuación promedio de l@s profesores.*/
+function  averageScoreTeachers (sede,generation){
+  var averageTeachers = data[sede][generation]['ratings'];
+  var scoreTeachers = 0;
+  for (i = 0; i <  averageTeachers.length; i++) {
+    if ( averageTeachers[i]['jedi']  ) {
+      scoreTeachers += 1;
+    }
+  }
+  return scoreTeachers;
+}
+averageScoreTeachers('AQP','2016-2')
+
+
 
 /*Pregunta 10: La puntuación promedio de l@s jedi masters. */
 //data.AQP["2016-2"]['ratings'][0]['jedi']
@@ -55,7 +70,7 @@ function averageJediMasters (sede,generation){
   var averageScoreJedi = data[sede][generation]['ratings'];
   var ScoreJedi = 0;  
   for (i = 0; i < averageScoreJedi.length; i++) {
-    if (averageScoreJedi[i]['jedi']) {
+    if (averageScoreJedi[i]['jedi']  ) {
       ScoreJedi += 1;
     }
   }
